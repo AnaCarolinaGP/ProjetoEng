@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+	<title>Contador</title>
+	
+	<script language='javascript' src='util/jquery.js'></script>	
+	<script language='javascript' src='util/funcoes.js'></script>	
+	<link href="util/style.css" rel="stylesheet" type="text/css" />
+	
+</head>
+<body>
+	<span class="overlay"></span>
+	<header>
+		<h1>Context</h1>
+		<div>
+			<span>
+				<label>Texto 1</label>
+				<button id="mais_texto" title="Incluir novo texto">+</button>
+				
+			</span>
+		</div>
+	</header>
+	
+	<section id="modal">
+		<h2> Resultado </h2>
+		<span class="qnt_caracteres_espaco">
+			Caracteres (sem espaço): <label></label>
+		</span>
+		
+		<span class="qnt_caracteres_totais">
+			Caracteres (com espaço): <label></label>
+		</span>
+		
+		<span class="qnt_palavras">
+			Palavras: <label></label>
+		</span>
+		
+		<span class="qnt_paragrafos">
+			Paragrafos: <label></label>
+		</span>
+		
+		<div>
+			<button id="fechar">fechar</button>
+			<button id="novo">Novo</button>
+		</div>
+	</section>
+	
+	<section id="principal">
+		<div></div>
+		<textarea id="paragrafo" placeholder="Escreva o parágrafo aqui e tecle ENTER"></textarea>
+		<span>
+			<button id="contar"> contar </button>
+			<label> <input type="checkbox"> Resultado por parágrafo </label>
+		</span>
+	</section>
+	
+</body>
+</html>
