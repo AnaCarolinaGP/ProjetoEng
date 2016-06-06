@@ -13,9 +13,18 @@ body{
 	overflow: hidden;
 }
 
-/************************************/
-/* HEADER							*/
-/************************************/
+#teste{
+	width: 500px;
+	height: 130px;
+	outline: none;
+	border: 1px solid #ddd;
+	padding: 10px;
+	position: absolute;
+	bottom: 10px;
+	color: #777;
+	resize: none;
+	float: left;
+}
 
 header {
     background: #03A9F4;
@@ -36,42 +45,6 @@ header h1 {
     margin: 0 auto;
 }
 
-
-header div {
-    margin: 12px auto 0;
-    display: block;
-    width: 720px;
-    background: #fff;
-    padding-bottom: 15px;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
-}
-
-header div span {
-    border-bottom: 1px solid #eee;
-    display: block;
-    padding: 11px 10px 12px;
-}
-
-
-header span.varios label {
-    margin: 0 3px;
-    border: 1px solid #eee;
-    padding: 5px 10px;
-    border-radius: 3px;
-	cursor: pointer;
-}
-
-header span.varios label:hover {
-	background: #eee;
-}
-
-/************************************/
-/* SECTION PRINCIPAL				*/
-/************************************/
-
 section#principal {
     background: #fff;
     width: 700px;
@@ -79,6 +52,19 @@ section#principal {
     box-shadow: 0px 0px 5px #ccc;
     padding: 10px;
     position: relative;
+}
+
+header div {
+    margin: 12px auto 0;
+    display: block;
+    width: 720px;
+    background: #fff;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #eee; */
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
 }
 
 #principal div {
@@ -91,26 +77,6 @@ section#principal {
     line-height: 22px;
     text-align: justify;
 }
-
-#principal span {
-    float: right;
-    width: 200px;
-    text-align: center;
-}
-
-#principal span label {
-    display: block;
-    clear: both;
-    margin: 20px auto 10px;
-    color: #777;
-    font-size: 12px;
-    width: 140px;
-}
-
-#principal span label input[type="checkbox"] {
-    float: left;
-}
-
 
 button#mais_texto {
     position: absolute;
@@ -125,23 +91,6 @@ button#mais_texto {
     cursor: pointer;
     box-shadow: 0px 0px 5px #eee;
     margin-top: 2px;
-}
-
-/************************************/
-/* CONTROLE PARAGRAFO				*/
-/************************************/
-
-#paragrafo{
-	width: 500px;
-	height: 130px;
-	outline: none;
-	border: 1px solid #ddd;
-	padding: 10px;
-	position: absolute;
-	bottom: 10px;
-	color: #777;
-	resize: none;
-	float: left;
 }
 
 button#contar {
@@ -160,10 +109,11 @@ button#contar {
     margin-right: -10px;
 }
 
-/************************************/
-/* MODAL DE RESPOSTA				*/
-/************************************/
-
+header div span {
+    border-bottom: 1px solid #eee;
+    display: block;
+    padding: 11px 10px 12px;
+}
 
 section#modal {
     position: absolute;
@@ -226,7 +176,6 @@ button#fechar {
     cursor: pointer;
     outline: none;
 }
-
 #modal h2 {
     color: #03A9F4;
     font-weight: normal;
@@ -239,4 +188,35 @@ button#fechar {
 #modal span label {
     color: #8BC34A;
     margin-left: 5px;
+}
+
+#principal span {
+    float: right;
+    width: 200px;
+    text-align: center;
+}
+
+#principal span label {
+    display: block;
+    clear: both;
+    margin: 20px auto 10px;
+    color: #777;
+    font-size: 12px;
+    width: 140px;
+}
+
+#principal span label input[type="checkbox"] {
+    float: left;
+}
+
+header span.varios label {
+    margin: 0 3px;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 3px;
+	cursor: pointer;
+}
+
+header span.varios label:hover {
+	background: #eee;
 }
