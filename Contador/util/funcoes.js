@@ -30,20 +30,7 @@ $(document).ready(function(){
 	});
 	
 	$("#novo").click(function(){
-		$("#modal, .overlay").hide();
-		caracteresTotal = 0;
-		caracteresSETotal = 0; // sem espaço
-		paragrafosTotal = 0;
-		palavrasTotal = 0;
-		$("#principal div p").remove();
-		// se existir mais de um texto
-		if (qntTexto > 1){
-			$("header span label").remove();
-			$("header span").append("<label>texto 1</label>").removeClass();
-			$("#contar").text("contar");
-			$("#principal span label").show();
-		}
-		qntTexto = 1;
+		location.reload();
 	});
 	
 	$("#mais_texto").click(function(){
@@ -77,12 +64,11 @@ $(document).ready(function(){
 			// conta caracteres sem o espaço
 			qntCaracteresSemEspaco = qntCaracteresTotais - qntPalavras + 1;
 			caracteresSETotal += qntCaracteresSemEspaco;
-						
+			
 			paragrafosTotal++;			
 		
 			$(this).val("");
 		}	
 	});
-	
 	
 });
