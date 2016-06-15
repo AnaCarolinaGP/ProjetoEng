@@ -121,11 +121,12 @@ section#modal {
     background: #fff;
     padding: 10px;
     width: 500px;
-    height: 220px;
+    /* height: 220px; */
     box-shadow: 0px 0px 5px #999;
     border-radius: 5px;
     display: none;
     top: 150px;
+    padding-bottom: 45px;
 }
 
 span.overlay {
@@ -185,9 +186,24 @@ button#fechar {
     letter-spacing: 1px;
 }
 
+#modal h3 {
+    color: #2196f3;
+    font-size: 14px;
+    margin-top: 10px;
+	display: none;
+}
+
 #modal span label {
     color: #8BC34A;
     margin-left: 5px;
+}
+
+#modal .exibir {
+    top: 25px;
+    border-top: 0;
+    display: none;
+    text-align: left;
+    margin-left: 250px;
 }
 
 #principal span {
@@ -217,6 +233,10 @@ header span.varios label {
 	cursor: pointer;
 }
 
-header span.varios label:hover {
+header span.varios label:hover, header span.varios label.ativo {
 	background: #eee;
+}
+
+#txt{
+	display: none;
 }
