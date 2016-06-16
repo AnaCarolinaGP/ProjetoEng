@@ -11,10 +11,11 @@
 <body>
 	<span class="overlay"></span>
 	<header>
-		<h1>Context</h1>
+		<h1>Contador de Caracteres</h1>
 		<div>
 			<span>
-				<label>Texto 1</label>
+				<label id="txt1">Texto 1</label>
+				<label id="txt">Texto 2</label>
 				<button id="mais_texto" title="Incluir novo texto">+</button>
 				
 			</span>
@@ -23,6 +24,8 @@
 	
 	<section id="modal">
 		<h2> Resultado </h2>
+	
+		<h3>Texto 1</h3>
 		<span class="qnt_caracteres_espaco">
 			Caracteres (sem espaço): <label></label>
 		</span>
@@ -42,6 +45,30 @@
 		<span class="qnt_numeros">
 			Números: <label></label>
 		</span>
+		
+		
+		<div class="exibir">
+			<h3>Texto 2</h3>
+			<span class="qnt_caracteres_espaco_2">
+				Caracteres (sem espaço): <label></label>
+			</span>
+			
+			<span class="qnt_caracteres_totais_2">
+				Caracteres (com espaço): <label></label>
+			</span>
+			
+			<span class="qnt_palavras_2">
+				Palavras: <label></label>
+			</span>
+			
+			<span class="qnt_paragrafos_2">
+				Paragrafos: <label></label>
+			</span>
+			
+			<span class="qnt_numeros_2">
+				Números: <label></label>
+			</span>
+		</div>
 		
 		<div>
 			<button id="fechar">fechar</button>
